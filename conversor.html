@@ -4,43 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="conversor.css">
     <title>Conversor de Temperatura</title>
 </head>
 <body>
-    <section id="main-container">
-        
-        <div id="wrapper">
+        <section id="main-container">
             <div class="wrapper-celsius">
-                <label for="celsius">Celsius</label>
+                <label for="celsius" id='titulo'>Temperatura</label>
                 <input id='celsius' type="text">
             </div>
-
-            <div id="result"></div>
-
-            <div class="wrapper-fahrenheit">
-                <label for="fahrenheit">Fahrenheit</label>
-                <input id="fahrenheit" type="text">
-            </div>
-        </div> 
-        <div id="container-2">
+            <h2>Selecione a conversão:</h2>
             <select name="select" id="list" onchange="getSelectValue()";>
-                <option  value="">Selecione...</option>
-                <option id='opcao1' value="1">Celsius</option>
-                <option id='opcao2' value="2">Fahrenheit</option>
+                <option value="" selected>Conversão</option>
+                <option  value="1">Celsius</option>
+                <option  value="2">Fahrenheit</option>
             </select>
-
-            
-
             <button id="converter" onclick();>Converter</button>
-        </div>
-        
-        
-
-            
-            
-    </section>
+                <h1 id="trocatexto"></h1>
+                <div id="result"></div>
+        </section> 
     <script src="conversor.js"></script>
 </body>
 </html>
